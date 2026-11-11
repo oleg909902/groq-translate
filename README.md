@@ -2,7 +2,7 @@
 
 A Claude Code plugin: type in any language, and Claude receives **only the translation** (English by default). The translation is done by a model on [Groq](https://groq.com) (the free tier is enough). Based on [prompt-translate](https://github.com/BruceXcluding/prompt-translate) (MIT), with only the Groq engine kept.
 
-![The band above the prompt: typed in Russian, sent to Claude in English](assets/band.png)
+![The band above the prompt: typed in Russian, sent to Claude in English](assets/screenshot.png)
 
 ## What it does
 
