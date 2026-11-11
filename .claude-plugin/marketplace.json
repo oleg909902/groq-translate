@@ -1,0 +1,27 @@
+{
+  "name": "groq-translate",
+  "owner": {
+    "name": "oleg"
+  },
+  "metadata": {
+    "description": "groq-translate: type in any language; Claude Code receives your prompt in one target language, translated by Groq."
+  },
+  "plugins": [
+    {
+      "name": "groq-translate",
+      "source": "./",
+      "description": "Translate whatever you type into one target language with a model on Groq before it reaches Claude, keeping code, paths and @file mentions verbatim.",
+      "version": "0.1.0",
+      "author": {
+        "name": "oleg"
+      },
+      "license": "MIT",
+      "keywords": [
+        "translate",
+        "translation",
+        "prompt",
+        "groq"
+      ]
+    }
+  ]
+}

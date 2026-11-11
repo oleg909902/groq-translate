@@ -1,0 +1,43 @@
+{
+  "name": "groq-translate",
+  "version": "0.1.0",
+  "description": "Translate whatever you type into one target language with a model on Groq before it reaches Claude, keeping code, paths and @file mentions verbatim. Claude receives only the translation.",
+  "author": {
+    "name": "oleg"
+  },
+  "license": "MIT",
+  "keywords": [
+    "translate",
+    "translation",
+    "prompt",
+    "groq"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Target language",
+      "description": "The language every prompt is sent to Claude in, e.g. English.",
+      "default": "English"
+    },
+    "enabled": {
+      "type": "boolean",
+      "title": "On at session start",
+      "description": "Whether translation is on when a session starts; /translate on|off changes it for the session.",
+      "default": true
+    },
+    "groqApiKey": {
+      "type": "string",
+      "title": "Groq API key",
+      "description": "Kept in secure storage, sent to Groq in the Authorization header.",
+      "sensitive": true,
+      "default": ""
+    },
+    "groqModel": {
+      "type": "string",
+      "title": "Groq model",
+      "description": "The Groq model id that translates. Empty: openai/gpt-oss-120b.",
+      "default": "openai/gpt-oss-120b"
+    }
+  }
+}
