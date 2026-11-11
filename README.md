@@ -2,6 +2,8 @@
 
 A Claude Code plugin: type in any language, and Claude receives **only the translation** (English by default). The translation is done by a model on [Groq](https://groq.com) (the free tier is enough). Based on [prompt-translate](https://github.com/BruceXcluding/prompt-translate) (MIT), with only the Groq engine kept.
 
+![The band above the prompt: typed in Russian, sent to Claude in English](assets/band.png)
+
 ## What it does
 
 - Translates what you type before it is sent. The chat keeps your original text; Claude reads only the translation.
